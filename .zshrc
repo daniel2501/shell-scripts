@@ -99,11 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export XDG_RUNTIME_DIR=/tmp/swaywm_
-mkdir -p $XDG_RUNTIME_DIR
 
 # Run things on start up if not already running
-pgrep -f push-org-files.sh || /home/daniel/shell-scripts/push-org-files.sh &
+pgrep -f push-org-files.sh || ~/shell-scripts/push-org-files.sh &
 
-# added by Snowflake SnowSQL installer
-export PATH=/home/daniel/bin:$PATH

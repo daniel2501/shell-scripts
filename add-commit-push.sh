@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 eval `ssh-agent`
-ssh-add /home/daniel/.ssh/github.pem
-cd /home/daniel/org
+ssh-add ~/.ssh/github.pem
+cd ~/org
 git checkout roam_v2
 git pull
 git add -A
