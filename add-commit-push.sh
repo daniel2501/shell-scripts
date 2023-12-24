@@ -2,7 +2,7 @@
 
 eval `ssh-agent`
 ssh-add $HOME/.ssh/github.pem
-cd /home/daniel/org
+cd $HOME/org
 git checkout roam_v2
 git pull
 git add -A
