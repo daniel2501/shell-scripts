@@ -70,7 +70,7 @@ ZSH_THEME="cloud"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pass zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
+plugins=(git pass zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +103,8 @@ export XDG_RUNTIME_DIR=/tmp/swaywm_
 mkdir -p $XDG_RUNTIME_DIR
 
 # Run things on start up if not already running
-pgrep -f push-org-files.sh || $HOME/shell-scripts/push-org-files.sh &
+pgrep -f push-org-files.sh || /home/daniel/shell-scripts/push-org-files.sh
+# pgrep -f push-org-files.sh || /home/daniel/shell-scripts/push-org-files.sh &
 
 # added by Snowflake SnowSQL installer
-export PATH=/home/daniel/bin:$PATH
+export PATH=$PATH:$HOME/bin:$HOME/.config/emacs/bin/
