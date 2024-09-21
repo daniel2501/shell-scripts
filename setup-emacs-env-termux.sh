@@ -1,7 +1,7 @@
 #!/bin/bash
 pkg in root-repo x11-repo
 pkg in git
-mkdir ~/.ssh && cd git
+mkdir ~/.ssh && cd $_
 pkg in openssl-tool
 ssh-keygen -b 521 -t ecdsa -C "daniel2501@gmail.com" -N '' -f ~/.ssh/github.pem
 cat github.pem.pub
